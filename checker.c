@@ -51,11 +51,7 @@ int chargeRateIsok (float chargeRate)
 
 int is_batteryparam_ok (int ret_temp,int ret_soc,int ret_CR)
 {
- if ((ret_temp && ret_soc && ret_CR) == 1 )
-    {
-     printf("battery is ok!\n");
-     return 1;
-    }  
+     return (ret_temp && ret_soc && ret_CR);   
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate)
