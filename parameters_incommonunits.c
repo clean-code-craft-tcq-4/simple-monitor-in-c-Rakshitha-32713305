@@ -2,5 +2,6 @@
 
 void tempInCelcius(float *temperature);
 {  
- *temperature = ((*temperature) - 32) * 5 / 9;     
+ *temperature = ((*temperature) - 32) * 5 / 9; 
+  printf("temp %f in celsius\n",*temperature);
 }
