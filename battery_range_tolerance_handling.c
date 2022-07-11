@@ -17,16 +17,16 @@ int rangecheck(float input,float l_max,float l_min)
   }
 }
 
-void calculate_tolerance (float l_max,float l_min,float l_max_tol,float l_min_tol)
+void calculate_tolerance (float l_max,float l_min,float *l_max_tol,float *l_min_tol)
 {
     float tol_level = 0;
     tol_level = ((l_max) * ((tolerance_level)/100));
     
-    l_max_tol = ( l_max - tol_level);
-    printf ("%f : warning_max_tol!\n",l_max_tol);
+    *l_max_tol = ( l_max - tol_level);
+    printf ("%f : warning_max_tol!\n",*l_max_tol);
      
-    l_min_tol = ( l_min + tol_level);
-    printf ("%f : warning_min_tol!\n",l_min_tol);
+    *l_min_tol = ( l_min + tol_level);
+    printf ("%f : warning_min_tol!\n",*l_min_tol);
 }
 
 
