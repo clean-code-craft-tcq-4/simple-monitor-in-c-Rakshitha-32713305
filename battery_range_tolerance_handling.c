@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "batteryparameters.h"
 
+const float tolerance_level = 5;
+
 int rangecheck(float input,float l_max,float l_min)
 {
   if(input < l_min || input > l_max)  
