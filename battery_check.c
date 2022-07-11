@@ -39,6 +39,5 @@ int batteryIsOk(float temperature, float soc, float chargeRate, int conversion)
     ret = is_batteryparam_ok(ret_temp,ret_soc,ret_CR); 
     update_batterystatus(ret);   
      
-  return ret;
-
+  return ret;     
 }
