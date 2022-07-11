@@ -1,4 +1,5 @@
-include <stdio.h>
+#include <stdio.h>
+#include "batteryparameters.h"
 
 int rangecheck(float input,float max,float min)
 {
