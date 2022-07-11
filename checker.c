@@ -3,8 +3,7 @@
 #include "battery_check.h"
 
 int main() 
-{
- 
+{ 
   assert(batteryIsOk(0, 20, 0.8));
   printf("************************************\n"); 
   assert(batteryIsOk(45, 70, 0.8));
