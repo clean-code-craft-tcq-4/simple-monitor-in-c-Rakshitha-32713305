@@ -23,22 +23,21 @@ void update_batterystatus(int ret)
 int batteryIsOk(float temperature, float soc, float chargeRate, int conversion)
 {
     int ret = 0;
+    float temp = temperature;
     int ret_temp = 0;
     int ret_soc  = 0;
-    int ret_CR   = 0;
-    int convert = 0;
+    int ret_CR   = 0;   
 
-  if (convert == 1)
+  if (conversion == 1)
   {
-    tempInCelcius(&temperature);
+    temp = tempInCelcius(temperature);    
   }     
-    ret_temp = tempIsok (temperature);
+    ret_temp = tempIsok (temp);
     ret_soc  = socIsok (soc);
     ret_CR   = chargeRateIsok (chargeRate);
     
     ret = is_batteryparam_ok(ret_temp,ret_soc,ret_CR); 
-    update_batterystatus(ret);
-    
+    update_batterystatus(ret);   
      
   return ret;
 
