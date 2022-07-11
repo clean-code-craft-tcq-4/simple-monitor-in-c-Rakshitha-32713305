@@ -1,5 +1,6 @@
 #include "batteryparameters.h"
 #include "battery_range_tolerance_handling.h"
+include <stdio.h>
 
 int tempIsok (float temperature)
 {
