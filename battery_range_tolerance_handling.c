@@ -46,6 +46,7 @@ void check_max_warninglevel (float input,float l_max,float l_max_tol)
   {
     printf("HIGH_WARNING\n");
   }
+}
 
 void check_normal_range (float input,float l_max_tol,float l_min_tol)
 {
@@ -70,6 +71,6 @@ void check_max_breachlevel (float input,float l_max)
   {
     printf("HIGH_BREACH\n");
   }
-
+}
 
 
