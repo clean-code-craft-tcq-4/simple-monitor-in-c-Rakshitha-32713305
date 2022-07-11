@@ -6,4 +6,4 @@ extern void check_min_warninglevel (float input,float l_min,float l_min_tol);
 extern void check_max_warninglevel (float input,float l_max,float l_max_tol);
 extern void check_normal_range (float input,float l_max_tol,float l_min_tol);
 extern void check_min_breachlevel (float input,float l_min);
-extern void check_max_breachlevel (float input,float l_max)
+extern void check_max_breachlevel (float input,float l_max);
