@@ -12,12 +12,12 @@ const float min_CR = 0.0;
 const float max_CR = 0.8;
 
 //tolerance levels
-const float min_tol_temp ;
-const float max_tol_temp ;
-const float min_tol_soc ;
-const float max_tol_soc;
-const float min_tol_CR ;
-const float max_tol_CR;
+ float min_tol_temp =0 ;
+ float max_tol_temp =0 ;
+ float min_tol_soc =0 ;
+ float max_tol_soc =0;
+ float min_tol_CR =0 ;
+ float max_tol_CR =0;
 
 
 int tempIsok (float temperature)
@@ -29,7 +29,7 @@ int tempIsok (float temperature)
      
      if (rangecheck_temp == 1)
      {
-     calculate_tolerance (max_temp,min_temp,max_tol_temp,min_tol_temp);
+     calculate_tolerance (max_temp,min_temp,&max_tol_temp,&min_tol_temp);
      check_min_warninglevel(temperature,min_temp,min_tol_temp);
      check_max_warninglevel(temperature,max_temp,max_tol_temp);
      }
@@ -46,7 +46,7 @@ int socIsok (float soc)
      
      if(rangecheck_soc == 1)
      {
-     calculate_tolerance (max_soc,min_soc,max_tol_soc,min_tol_soc);
+     calculate_tolerance (max_soc,min_soc,&max_tol_soc,&min_tol_soc);
      check_min_warninglevel(soc,min_soc,min_tol_soc);
      check_max_warninglevel(soc,max_soc,max_tol_soc);
      }
@@ -63,7 +63,7 @@ int chargeRateIsok (float chargeRate)
      
      if(rangecheck_CR == 1)
      {
-     calculate_tolerance (max_CR,min_CR,max_tol_CR,min_tol_CR);
+     calculate_tolerance (max_CR,min_CR,&max_tol_CR,&min_tol_CR);
      check_min_warninglevel(chargeRate,min_CR,min_tol_CR);
      check_max_warninglevel(chargeRate,max_CR,max_tol_CR);
      }
