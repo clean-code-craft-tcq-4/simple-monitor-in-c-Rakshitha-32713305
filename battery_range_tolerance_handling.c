@@ -33,7 +33,7 @@ void calculate_tolerance (float l_max,float l_min,float *l_max_tol,float *l_min_
 
 void check_min_warninglevel (float input,float l_min,float l_min_tol)
 {
-  if(input > l_min && input <= l_min_tol )  
+  if(input >= l_min && input <= l_min_tol )  
   {
     printf("WARNING : Approaching least point\n");
   }
@@ -42,7 +42,7 @@ void check_min_warninglevel (float input,float l_min,float l_min_tol)
 
 void check_max_warninglevel (float input,float l_max,float l_max_tol)
 {
-  if (input >= l_max_tol && input < l_max )
+  if (input >= l_max_tol && input <= l_max )
   {
     printf("WARNING : Approaching peak\n");
   }
