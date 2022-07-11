@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include "battery_check.h"
 
 int main() 
 {
