@@ -1,1 +1,1 @@
-extern void tempInCelcius(float *temperature);
+extern float tempInCelcius(float temperature);
