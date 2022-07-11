@@ -1,4 +1,4 @@
-
+#include "batteryparameters.h"
 #include "battery_check.h"
 
 int is_batteryparam_ok (int ret_temp,int ret_soc,int ret_CR)
@@ -21,12 +21,21 @@ int batteryIsOk(float temperature, float soc, float chargeRate)
     
     if(ret == 1)
     {
-       printf("BATTERY IS OK\n");     
+#if (DISPLAY_LANGUAGE == GERMAN)       
+       printf("BATTERIE IST OK\n"); 
+#else
+       printf("BATTERY IS OK\n");
+#endif
     }
     else
     {
-       printf("BATTERY IS NOT OK\n");      
+#if (DISPLAY_LANGUAGE == GERMAN)      
+       printf("BATTERY IS NOT OK\n"); 
+#else 
+       printf("BATTERIE NICHT OK\n"); 
+#endif
     }
+     
   return ret;
 
 }
