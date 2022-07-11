@@ -20,15 +20,15 @@ void update_batterystatus(int ret)
     }     
 }
 
-int batteryIsOk(float temperature, float soc, float chargeRate, boolean conversion)
+int batteryIsOk(float temperature, float soc, float chargeRate, int conversion)
 {
     int ret = 0;
     int ret_temp = 0;
     int ret_soc  = 0;
     int ret_CR   = 0;
-    boolean convert = FALSE;
+    int convert = 0;
 
-  if (convert == TRUE)
+  if (convert == 1)
   {
     tempInCelcius(&temperature);
   }     
