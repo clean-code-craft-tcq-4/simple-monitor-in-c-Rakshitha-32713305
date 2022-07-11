@@ -70,3 +70,9 @@ Example: If the SoC needs to be between 20 and 80, the warning-tolerance is 5% o
 Same for Temperature and Charge-rate.
 
 Keep in mind: Though we are starting with warning levels for all parameters, customers may give feedback to have warnings only for some parameters and not others. Minimize the change needed for such ‘tuning’.
+
+**##Extension 3: Accept input in different units**
+
+Some sensors report the temperature in Fahrenheit. Make provision to express the unit along with the measurement. Avoid repeating the limits in different units.
+
+Keep in mind: This time it was temperature in a different unit. Later perhaps other measurements would have variations. Make it possible to add compatibility with additional variations, with minimal modifications to existing code.
