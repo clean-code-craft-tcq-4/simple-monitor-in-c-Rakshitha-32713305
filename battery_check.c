@@ -1,3 +1,4 @@
+include <stdio.h>
 #include "battery_check.h"
 
 int is_batteryparam_ok (int ret_temp,int ret_soc,int ret_CR)
