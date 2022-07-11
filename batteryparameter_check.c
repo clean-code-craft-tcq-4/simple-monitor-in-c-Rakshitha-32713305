@@ -12,7 +12,6 @@ const float min_CR = 0.0;
 const float max_CR = 0.8;
 
 //tolerance levels
-const float tolerance_level = 5;
 const float min_tol_temp ;
 const float max_tol_temp ;
 const float min_tol_soc ;
