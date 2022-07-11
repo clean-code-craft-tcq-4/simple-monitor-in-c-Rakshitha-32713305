@@ -20,20 +20,12 @@ int batteryIsOk(float temperature, float soc, float chargeRate)
     ret = is_batteryparam_ok(ret_temp,ret_soc,ret_CR); 
     
     if(ret == 1)
-    {
-#if (DISPLAY_LANGUAGE == GERMAN)       
-       printf("BATTERIE IST OK\n"); 
-#else
+    {      
        printf("BATTERY IS OK\n");
-#endif
     }
     else
     {
-#if (DISPLAY_LANGUAGE == GERMAN)      
-       printf("BATTERY IS NOT OK\n"); 
-#else 
-       printf("BATTERIE NICHT OK\n"); 
-#endif
+       printf("BATTERY IS NOT OK\n");
     }
      
   return ret;
