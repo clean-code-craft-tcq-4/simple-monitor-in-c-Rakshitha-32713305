@@ -1,3 +1,5 @@
+include <stdio.h>
+
 int rangecheck(float input,float max,float min)
 {
   if(input < min || input > max)  
