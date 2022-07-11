@@ -23,7 +23,7 @@ void calculate_tolerance (float l_max,float l_min,float l_max_tol,float l_min_to
     l_max_tol = ( l_max - tol_level);
     printf ("%f : warning_max_tol!\n",l_max_tol);
      
-    l_min_tol = ( min + tol_level);
+    l_min_tol = ( l_min + tol_level);
     printf ("%f : warning_min_tol!\n",l_min_tol);
 }
 
